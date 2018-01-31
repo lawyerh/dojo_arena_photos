@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Street Fighter</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$("#arenaSelector button").hover(function(){
+					var temp = "url(" + $(this).attr("value") + ".jpg" + ")";
+					/*console.log(temp);*/
+					$("#container").css("background-image", temp);
+					/*console.log($(this).attr("value"));
+					console.log($("#container").css("background-image"));*/			
+					});
+
+				$("#arenaSelector button").click(function(){
+					$("#arenaSelector").hide();
+					$('#playerSelect').fadeIn();
+					});
+
+				$("#ninjaselect1").click(function(){
+					var temp = "url(" + $(this).val() +".png)";
+					console.log(temp);
+					$(".imgholder1").css("background-image", temp);
+				});
+
+				$("#ninjaselect2").click(function(){
+					var temp = "url(" + $(this).val() +".png)";
+					console.log(temp);
+					$(".imgholder2").css("background-image", temp);
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="arenaSelector">
+				<h2>Select Arena</h2>
+				<button value="beach">Beach</button>
+				<button value="earth">Planet</button>
+				<button value="dojo">Dojo</button>
+				<button value="forest">Forest</button>
+				<button value="matrix">Matrix</button>
+				<button value="snow">Snow</button>
+			</div>
+			<div id="playerSelect">
+				<h2>Select Players</h2>
+				<select id = "ninjaselect1">
+					<option value="donny">Donny</option>
+					<option value="leo">Leo</option>
+					<option value="raphael">Raphael</option>
+					<option value="mikey">Mikey</option>
+
+				</select>
+				<select id = "ninjaselect2">
+					<option value="donny">Donny</option>
+					<option value="leo">Leo</option>
+					<option value="raphael">Raphael</option>
+					<option value="mikey">Mikey</option>
+				</select>
+			</div>
+			<div class="imgholder1"></div>
+			<div id="spacer"></div>
+			<div class="imgholder2"></div>
+		</div>
+	</body>
+</html>

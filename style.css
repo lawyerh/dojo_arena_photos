@@ -1,0 +1,108 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#container
+{
+	height: 850px;
+	width: 85%;
+	border: 10px solid grey;
+	margin: 30px 100px;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#container img
+{
+	display: none;
+	background-repeat: no-repeat;
+}
+
+#arenaSelector
+{
+	background-color: #a3a4a6;
+	border: 8px solid #808080;
+	height: 180px;
+	width: 330px;
+	margin: 230px 600px 100px 600px;
+	border-radius: 10px;
+	padding-left: 20px
+}
+
+#arenaSelector h2
+{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+	color: orange;
+	text-shadow: 1px 2px white;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#arenaSelector button
+{
+	background-color: white;
+	height: 40px;
+	width: 100px;
+	border-radius: 10px;
+	border: none;
+	margin: 6px 0px 0px 0px;
+	font-weight: bold
+}
+
+#playerSelect
+{
+	background-color: #a3a4a6;
+	border: 8px solid #808080;
+	height: 180px;
+	width: 287px;
+	margin: 230px 600px 100px 600px;
+	border-radius: 10px;
+	padding-left: 64px;
+	display: none;
+}
+
+#playerSelect h2
+{
+	margin-left: 15px;
+	margin-top: 20px;
+	font-size: 30px;
+	color: orange;
+	text-shadow: 1px 2px white;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#playerSelect select {
+	margin-bottom: 5px;
+
+}
+
+.imgholder1 {	
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin-left: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+#spacer
+{
+	width: 900px;
+	height: 1px;
+	display: inline-block;
+}
+
+.imgholder2 {
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin-left: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
